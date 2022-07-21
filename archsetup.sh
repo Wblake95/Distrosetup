@@ -8,7 +8,7 @@ echo "#########################################################################"
 echo "#########################################################################"
 echo "### collecting keyrings                                               ###"
 echo "#########################################################################"
-sudo pacman -Sy archlinux-keyring arcolinux-keyring
+sudo pacman -Sy --needed --noconfirm archlinux-keyring arcolinux-keyring
 
 echo "#########################################################################"
 echo "### updating system and installing packages                           ###"
