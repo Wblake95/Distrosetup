@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
-
+set -e
 echo "########################################################################"
 echo "### Hello! This is my script that will set up my desktop.            ###"
 echo "### I don't have to do it anymore!                                   ###"
@@ -41,7 +41,7 @@ hblock
 echo "########################################################################"
 echo "### Setting up git and adding my repositories                        ###"
 echo "########################################################################"
-bash ~/Documents/distrosetup/gitsetup.sh
+bash ~/Documents/Distrosetup/gitsetup.sh
 cd ~/Documents
 git clone https://github.com/Wblake95/Linuxstuff
 git clone https://github.com/Wblake95/Python_Learning
