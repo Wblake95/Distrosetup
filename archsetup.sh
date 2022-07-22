@@ -16,25 +16,21 @@ echo "### skell command for ArcoLinux                                      ###"
 echo "### pacman flatpak pip                                               ###"
 echo "########################################################################"
 sudo pacman -Syyu
-skell
 sudo pacman -S --needed --noconfirm vim emacs ranger vifm\
 	gimp krita discord steam flatpak python-pip
 
 sudo flatpak update
-sudo flatpak install com.heroicgameslauncher.hgl
+sudo flatpak install com.heroicgameslauncher.hgl\
+	com.valvesoftware.Steam.CompatibilityTool.Proton-GE
 
 pip update
 
-echo "########################################################################"
-echo "### Installing ProtonGE                                              ###"
-echo "########################################################################"
-pip install protonup
-protonup
+skell
 
 echo "########################################################################"
 echo "### Setting up Steamdeck UI                                          ###"
 echo "########################################################################"
-cd ~/.steam/steam/package
+cd ~/.local/share/Steam/package/
 echo "steampal_stable_9a24a2bf68596b860cb6710d9ea307a76c29a04d" > beta
 
 echo "########################################################################"
