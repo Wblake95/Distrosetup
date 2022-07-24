@@ -34,7 +34,7 @@ cd ~/.local/share/Steam/package/
 echo "steampal_stable_9a24a2bf68596b860cb6710d9ea307a76c29a04d" > beta
 
 echo "########################################################################"
-echo "### Running hblock and                                               ###"
+echo "### Running hblock                                                   ###"
 echo "########################################################################"
 hblock
 
@@ -56,6 +56,8 @@ ln -sbf --suffix=.bak ~/Documents/Linuxstuff/alacritty.yml ~/.config/alacritty/
 ln -sbf --suffix=.bak ~/Documents/Linuxstuff/neofetch.config.conf\
        	~/.config/neofetch/config.conf
 ln -sbf --suffix=.bak ~/Documents/Linuxstuff/variety.conf ~/.config/variety/
+sudo ln -s ~/Documents/Python_Learning/Freecodecamp_projects/pwdgen.py\
+       	/usr/local/bin/pwdgen
 
 echo "########################################################################"
 echo "### Done!                                                            ###"
