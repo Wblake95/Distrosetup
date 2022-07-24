@@ -4,22 +4,17 @@ set -e
 echo "#########################################################################"
 echo "### Running skell command                                             ###"
 echo "#########################################################################"
-
 skell
 
 echo "#########################################################################"
 echo "### Retrieving config files from git                                  ###"
 echo "#########################################################################"
-
 cd ~/Documents/Linuxstuff/
 git reset --hard
-
-read
 
 echo "#########################################################################"
 echo "### Recreating soft links for configs                                 ###"
 echo "#########################################################################"
-
 ln -sbf --suffix=.bak ~/Documents/Linuxstuff/.bashrc ~/
 ln -sbf --suffix=.bak ~/Documents/Linuxstuff/.vimrc ~/
 ln -sbf --suffix=.bak ~/Documents/Linuxstuff/.zshrc ~/
@@ -31,5 +26,6 @@ ln -sbf --suffix=.bak ~/Documents/Linuxstuff/variety.conf ~/.config/variety/
 echo "#########################################################################"
 echo "### Done! Now will reboot system                                      ###"
 echo "#########################################################################"
-
+echo "Will reboot in 10 sec!)
+sleep 10
 reboot
