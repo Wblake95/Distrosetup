@@ -1,5 +1,6 @@
 #! /usr/bin/env bash
 set -e
+
 echo "########################################################################"
 echo "### Hello! This is my script that will set up my desktop.            ###"
 echo "### I don't have to do it anymore!                                   ###"
