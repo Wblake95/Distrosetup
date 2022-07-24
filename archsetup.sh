@@ -16,8 +16,10 @@ echo "### skell command for ArcoLinux                                      ###"
 echo "### pacman flatpak pip                                               ###"
 echo "########################################################################"
 sudo pacman -Syyu
-sudo pacman -S --needed --noconfirm vim emacs ranger vifm\
-	gimp krita discord steam flatpak python-pip
+sudo pacman -S --needed --noconfirm vim emacs ranger vifm
+sudo pacman -S --needed --noconfirm gimp krita
+sudo pacman -S --needed --noconfirm discord steam nvidia
+sudo pacman -S --needed --noconfirm flatpak python-pip 
 
 sudo flatpak update
 sudo flatpak install com.heroicgameslauncher.hgl\
