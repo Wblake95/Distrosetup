@@ -26,6 +26,6 @@ ln -sbf --suffix=.bak ~/Documents/Linuxstuff/variety.conf ~/.config/variety/
 echo "#########################################################################"
 echo "### Done! Now will reboot system                                      ###"
 echo "#########################################################################"
-echo "Will reboot in 10 sec!)
+echo "Will reboot in 10 sec!"
 sleep 10
 reboot
