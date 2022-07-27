@@ -113,12 +113,12 @@ echo "Done"
 
 # Personal command
 {
-echo "Personal commands"
-sudo ln -s ~/Documents/Python_Learning/Freecodecamp_projects/pwdgen.py\
-       	 /usr/local/bin/pwdgen
- }||{
+	echo "Personal commands"
+	sudo ln -s ~/Documents/Python_Learning/Freecodecamp_projects/pwdgen.py\
+	       	 /usr/local/bin/pwdgen
+}||{
 	 echo "There was a problem"
- }
+}
 echo "Done"
 echo "Configs done"
 
