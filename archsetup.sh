@@ -96,19 +96,29 @@ echo "Done"
 echo "Window managers"
 ## Awesomewm
 echo "Awesomewm"
-ln -sbf --suffix=.bak ~/Documents/Linuxstuff/.conf/autostart.sh\
+mv ~/.config/awesome/autostart.sh\
+       	~/.config/awesome/autostart.sh.bak
+mv ~/.config/awesome/picom.conf\
+       	~/.config/awesome/picom.confbak
+mv ~/.config/awesome/rc.lua\
+       	~/.config/awesome/rc.lua.bak
+cp ~/Documents/Linuxstuff/.conf/autostart.sh\
 	~/.config/awesome/
 # chmod 755 ~/Documents/Linuxstuff/.conf/autostart.sh
-ln -sbf --suffix=.bak ~/Documents/Linuxstuff/.conf/picom.conf\
+cp ~/Documents/Linuxstuff/.conf/picom.conf\
 	~/.config/awesome/
-ln -sbf --suffix=.bak ~/Documents/Linuxstuff/.conf/rc.lua\
+cp ~/Documents/Linuxstuff/.conf/rc.lua\
 	~/.config/awesome/
 echo "Done"
 
 # Personal command
+{
 echo "Personal commands"
 sudo ln -s ~/Documents/Python_Learning/Freecodecamp_projects/pwdgen.py\
        	 /usr/local/bin/pwdgen
+ }||{
+	 echo "There was a problem"
+ }
 echo "Done"
 echo "Configs done"
 
